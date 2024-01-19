@@ -1,0 +1,172 @@
+.header {
+  /* background-color: darkcyan; */
+  background-image: linear-gradient(to right, whitesmoke, darkcyan, whitesmoke);
+  text-align: center;
+  padding: 25px;
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.2);
+}
+.todoForm {
+  border-radius: 8px;
+  width: 700px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 50px;
+  box-shadow: 0 6px 8px rgb(0, 0, 0, 0.1);
+  margin-bottom: 70px;
+}
+.container {
+  display: flex;
+}
+.todoInput {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 1.3rem;
+  border: none;
+  background: none;
+  outline: none;
+  font-family: gabriela;
+}
+.todoButton {
+  background-color: darkcyan;
+  border-radius: 5px;
+  border: none;
+  padding: 0 15px;
+  color: white;
+  /* font-weight: bold; */
+  font-family: gabriela;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.todoButton:hover {
+  background-color: rgb(0, 139, 139, 0.6);
+}
+.itemContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  margin: 0 auto;
+  padding: 5px 20px;
+  background-image: linear-gradient(
+    to bottom,
+    whitesmoke,
+    rgb(0, 139, 139, 0.2)
+  );
+  border-radius: 8px;
+  box-shadow: 0 6px 8px rgb(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+.itemName {
+  font-size: 1.25rem;
+}
+.itemButton {
+  background-color: darkcyan;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  font-weight: bold;
+  font-family: gabriela;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.itemButton:hover {
+  background-color: rgb(0, 139, 139, 0.6);
+}
+.completed {
+  text-decoration: line-through;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* background-image: linear-gradient(to right, whitesmoke, darkcyan, whitesmoke); */
+  background-color: darkcyan;
+  text-align: center;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0.6rem 0;
+}
+.item {
+  margin: 0 100px;
+}
+@media only screen and (max-width: 778px) {
+  .header {
+    font-size: 2rem;
+    padding: 15px;
+    /* text-align: center; */
+  }
+  .todoForm {
+    width: 600px;
+  }
+  .itemContainer {
+    width: 500px;
+  }
+  .item {
+    margin: 0 50px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .header {
+    font-size: 1.7rem;
+  }
+  .todoForm {
+    width: 425px;
+  }
+  .todoInput {
+    font-size: 1.1rem;
+    padding: 5px;
+  }
+  .todoButton {
+    font-size: 12px;
+  }
+  .itemContainer {
+    width: 350px;
+  }
+  .itemName {
+    font-size: 1rem;
+  }
+  .itemButton {
+    font-size: 10px;
+  }
+  .footer {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .header {
+    font-size: 1.5rem;
+  }
+  .todoForm {
+    width: 325px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .todoInput {
+    font-size: 0.9rem;
+  }
+  .todoButton {
+    padding: 0 9px;
+  }
+  .itemContainer {
+    width: 300px;
+  }
+  .itemName {
+    font-size: 0.9rem;
+  }
+  .itemButton {
+    font-size: 8px;
+    padding: 8px 10px;
+  }
+  .footer {
+    font-size: 1rem;
+  }
+  .item {
+    margin: 0 20px;
+  }
+}
